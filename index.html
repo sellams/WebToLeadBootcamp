@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web to Lead Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -15,6 +16,11 @@
       method="POST"
       onsubmit="beforesubmit()"
     >
+      <input
+        type="hidden"
+        name="captcha_settings"
+        value='{"keyname":"WebToLeadBootcamp","fallback":"true","orgId":"00D06000001cBmD","ts":""}'
+      />
       <input type="hidden" name="oid" value="00D06000001cBmD" />
       <input
         type="hidden"
@@ -57,8 +63,13 @@
       ><input type="date" required="true" class="inputdate" />
 
       <!-- Lead Date:<span class="dateInput dateOnlyInput"><input  id="00N0600000Kiebc" name="00N0600000Kiebc" size="12" type="text" /></span><br />  -->
-
+      <div
+        class="g-recaptcha"
+        data-sitekey="6Ldxg4UpAAAAALjLy-mmM7jPaqBJ7IVIB7YLPGFh"
+      ></div>
       <input type="submit" name="submit" class="submit" />
+
+      <br />
     </form>
   </body>
 </html>

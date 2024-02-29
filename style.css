@@ -1,37 +1,42 @@
 * {
-
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 input,
 label {
-    display: block;
+  display: block;
 }
 
-label{
-    color:green;
+label {
+  color: green;
 }
 input {
-    width:100%;
+  width: 100%;
 }
 
 .submit {
-    margin: 15px auto 0 auto;
-    width : 40%;
-    background-color: blueviolet;
-    border-radius: 5px;
+  margin: 15px auto 0 auto;
+  width: 40%;
+  background-color: blueviolet;
+  border-radius: 5px;
 }
 
 form {
-    min-width: 300px;
-    max-width: 500px;
-    margin: auto;
-    border: 2px solid black;
-    padding: 15px;
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+.g-recaptcha {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
 }
